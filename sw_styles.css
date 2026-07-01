@@ -57,6 +57,7 @@ header h1 {
 	text-decoration: none;
 	color: #5A3E2B;
 	margin-left: 1.5em;
+	wrap: nowrap;
 	font-weight: bold;
 }
 
