@@ -50,13 +50,13 @@ header h1 {
 }
 
 .logo {
-	max-width: 180px;
+	max-width: 220px;
 }
 
 .main nav {
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 2.5em;
+	gap: 5.5em;
 }
 
 .main-nav a {
