@@ -47,11 +47,9 @@ nav {
 	text-align: center;
 }
 
-}
-
 nav a {
-	color: #4A4A4A;
 	text-decoration: none;
+	color: #5A3E2B;
 	margin: 0 1em;
 	font-weight: bold;
 }
@@ -59,6 +57,13 @@ nav a {
 /*Style rules for main content*/
 main {
 	padding: 2em;
+}
+
+#hero {
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
 }
 
 .hero {
@@ -72,13 +77,13 @@ main {
 .hero-image img {
 	max-width: 400px;
 	border-radius: 10px;
-	box-shadow: 6px, 6px, 20px rgba(0, 0, 0, 0.15);
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero-text {
 	max-width: 400px;
 	color: #4A4A4A;
-	font-family: "Roboto Slab', serif;
+	font-family: 'Roboto Slab', serif;
 }
 
 /*Style rules for product grid*/
