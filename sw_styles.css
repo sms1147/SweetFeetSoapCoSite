@@ -71,23 +71,29 @@ main {
 }
 
 .hero {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	background-color: #FAF7F2;
-	padding: 2em;
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .hero-image img {
-	max-width: 400px;
+	width: 100%;
+	display: block;
 	border-radius: 10px;
-	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero-text {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1.5em;
+	border-radius: 10px;
 	max-width: 400px;
 	color: #4A4A4A;
 	font-family: 'Roboto Slab', serif;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /*Style rules for product grid*/
