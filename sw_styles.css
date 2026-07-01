@@ -20,7 +20,7 @@ body {
 }
 
 img {
-	max-width: 60%;
+	max-width: 100%;
 	display: block;
 }
 
@@ -50,7 +50,7 @@ header h1 {
 }
 
 .logo {
-	max-width: 100px;
+	max-width: 60px;
 }
 
 .main-nav a {
