@@ -85,7 +85,6 @@ main {
 }
 
 .hero-text {
-	float: right;
 	max-width: 400px;
 	color: #4A4A4A;
 	font-family: 'Roboto Slab', serif;
