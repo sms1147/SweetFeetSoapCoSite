@@ -14,7 +14,7 @@ body, header, nav, main, footer, h1, div, img, ul {
 /*Style rules for body and images*/
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	background-color: #C7D8C6;
+	background-color: #E4F0E2;
 	color: #4A4A4A;
 	line-height: 1.6;
 }
@@ -47,7 +47,7 @@ header h1 {
 	justify-content: space-between;
 	background-color: #FAF7F2;
 	padding: 1em;
-	border-bottom: 4px solid #E2CFBF;
+	border-bottom: 4px solid #9BB594;
 }
 
 .logo {
