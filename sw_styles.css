@@ -58,14 +58,24 @@ header h1 {
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 3em;
-	flex-grow: 1;
-	justify-content: flex-end;
 }
 
 .main-nav a {
 	text-decoration: none;
 	color: #5A3E2B;
 	font-weight: bold;
+
+	/* Button styling */
+	background-color: #f3EDE4;
+	padding: 0.5em;
+	border-radius: 8px;
+	border: 1px solid #D6C7B5;
+	margin-left: 1em;
+}
+
+.main-nav a:hover {
+	background-color: #E8DCC8;
+	border-color: #CBB9A4;
 }
 
 /*Style rules for main content*/
