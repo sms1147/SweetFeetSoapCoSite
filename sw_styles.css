@@ -54,10 +54,10 @@ header h1 {
 	height: auto;
 }
 
-.main nav {
+.main-nav {
 	display: flex;
-	flex-wrap: nowrap;
-	gap: 3em;
+	gap: 1em;
+	align-items: center;
 }
 
 .main-nav a {
