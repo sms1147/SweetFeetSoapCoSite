@@ -14,7 +14,7 @@ body, header, nav, main, footer, h1, div, img, ul {
 /*Style rules for body and images*/
 body {
 	font-family: Helvetica, Arial, sans-serif;
-	background-color: #FAF7F2;
+	background-color: #C7D8C6;
 	color: #4A4A4A;
 	line-height: 1.6;
 }
@@ -109,7 +109,7 @@ main {
 
 .product-card {
 	background-color: #fff;
-	border: 2px solid #C7D8C6;
+	border: 2px solid #FAF7F2;
 	border-radius: 10px;
 	width: 180px;
 	text-align: center;
