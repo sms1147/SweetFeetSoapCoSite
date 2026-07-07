@@ -79,6 +79,12 @@ header h1 {
 	border-color: #CBB9A4;
 }
 
+.cart-link {
+	font-size: 2rem;
+	vertical-align: middle;
+	margin-left: 0.5rem;
+}
+
 /*Style rules for main content*/
 main {
 	padding: 2rem;
