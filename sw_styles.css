@@ -80,9 +80,15 @@ header h1 {
 }
 
 .cart-link {
-	font-size: 3rem;
+	font-size: 2rem;
 	vertical-align: middle;
 	margin-left: 0.5rem;
+}
+
+.cart-icon {
+	width: 28px;
+	height: auto;
+	vertical-align: middle;
 }
 
 /*Style rules for main content*/
