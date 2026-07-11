@@ -59,18 +59,21 @@ header h1 {
 .main-nav {
 	display: flex;
 	gap: 1rem;
+	text-align: center;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
 .main-nav a {
+	display: inline-block;
 	text-decoration: none;
 	color: #FFF;
 	font-weight: bold;
+	margin-top: 10px;
 
 	/* Button styling */
 	background-color: #5A3E2B;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem;
 	border-radius: 8px;
 	border: 1px solid #D6C7B5;
 	margin-left: 1rem;
