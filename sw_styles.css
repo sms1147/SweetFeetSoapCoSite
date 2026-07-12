@@ -42,26 +42,20 @@ header h1 {
 
 /*Style rules for Top Bar and navigation area*/
 .topbar {
-	display: flex;
-	justify-content: space-between;
 	background-color: #FDFBF7;
 	padding: 10px;
 	border-bottom: 4px solid #9BB594;
+	text-align: center;
 }
 
 .logo {
 	width: 250px;
 	height: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .main-nav {
-	display: flex;
-	gap: 1rem;
-	text-align: center;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-top: 10px;
 }
 
 .main-nav a {
@@ -69,14 +63,13 @@ header h1 {
 	text-decoration: none;
 	color: #FFF;
 	font-weight: bold;
-	margin-top: 10px;
 
 	/* Button styling */
 	background-color: #5A3E2B;
 	padding: 0.5rem 1rem;
 	border-radius: 8px;
 	border: 1px solid #D6C7B5;
-	margin-left: 1rem;
+	margin: 0.5rem;
 }
 
 .main-nav a:hover {
