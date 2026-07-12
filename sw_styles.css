@@ -60,7 +60,7 @@ header h1 {
 /* Navigation floats left, next to logo */
 .main-nav {
   float: left;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .main-nav a {
@@ -95,7 +95,7 @@ header h1 {
   margin: 0 0.3rem;
   text-align: center;
   position: relative;
-  top: 5px;
+  top: 8px;
 }
 
 .cart-link:hover {
