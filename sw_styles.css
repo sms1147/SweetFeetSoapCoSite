@@ -6,22 +6,22 @@ File Name: sw_styles.css
 
 /*CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 /*Style rules for body and images*/
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	background-color: #E4F0E2;
-	color: #4A4A4A;
-	font-size 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #E4F0E2;
+  color: #4A4A4A;
+  font-size: 18px;
 }
 
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /*Style rules for mobile viewport*/
@@ -29,134 +29,131 @@ img {
 
 /*Style rules for header*/
 header {
-	background-color: #FAF7F2;
-	padding: 2rem;
-	text-align: center;
+  background-color: #FAF7F2;
+  padding: 2rem;
+  text-align: center;
 }
 
 header h1 {
-	font-size: 2.5rem;
-	color: #6A8F7A;
+  font-size: 2.5rem;
+  color: #6A8F7A;
 }
 
 
 /*Style rules for Top Bar and navigation area*/
 .topbar {
-	background-color: #FDFBF7;
-	padding: 10px;
-	border-bottom: 4px solid #9BB594;
-	text-align: center;
+  background-color: #FDFBF7;
+  padding: 10px 0;
+  border-bottom: 4px solid #9BB594;
+  overflow: hidden; /* clears the floats so the bar keeps its height */
 }
 
-	
-}
-
+/* Logo floats left */
 .logo {
-	display: inline-block;
-	width: 250px;
-	height: auto;
-	margin-right: 20px;
+  float: left;
+  width: 250px;
+  height: auto;
+  margin-left: 20px;
 }
 
+/* Navigation floats left, next to logo */
 .main-nav {
-	display: inline-block;
+  float: left;
+  margin-left: 40px; /* spacing between logo and nav */
 }
 
 .main-nav a {
-	display: inline-block;
-	text-decoration: none;
-	color: #FFF;
-	font-weight: bold;
-
-	/* Button styling */
-	background-color: #5A3E2B;
-	padding: 0.5rem 1rem;
-	border-radius: 8px;
-	border: 1px solid #D6C7B5;
-	margin: 0.5rem;
+  display: inline-block; /* keeps links horizontal */
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #5A3E2B;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #D6C7B5;
+  margin: 0 0.3rem;
 }
 
 .main-nav a:hover {
-	background-color: #E8DCC8;
-	border-color: #CBB9A4;
+  background-color: #E8DCC8;
+  border-color: #CBB9A4;
 }
 
+/* Cart floats right */
 .cart-icon {
-	width: 28px;
-	height: auto;
-	margin-left: 10px;
+  float: right;
+  width: 28px;
+  height: auto;
+  margin-right: 20px;
 }
+
 
 /*Style rules for main content*/
 main {
-	padding: 2rem;
+  padding: 2rem;
 }
 
 .hero {
-	position: relative;
-	width: 100%;
-	max-width: 1000px;
-	margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .hero-image img {
-	width: 100%;
-	display: block;
-	border-radius: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
 
 .hero-text {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	background-color: rgba(255, 255, 255, 0.8);
-	padding: 1.5rem;
-	border-radius: 10px;
-	max-width: 400px;
-	color: #4A4A4A;
-	font-family: 'Roboto Slab', serif;
-	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 400px;
+  color: #4A4A4A;
+  font-family: 'Roboto Slab', serif;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 /*Style rules for product grid*/
 .product-grid {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 2rem;
-	padding: 2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+  padding: 2rem;
 }
 
 .product-card {
-	background-color: #fff;
-	border: 2px solid #E8DCC8;
-	border-radius: 10px;
-	width: 180px;
-	text-align: center;
-	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  border: 2px solid #E8DCC8;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
-	max-width: 100%;
-	border-radius: 8px;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 .map {
-	border: 6px solid #c7d8c6; /*soft sage*/
-	border-radius: 10px;
-	margin: 2rem auto;
-	max-width: 600px;
+  border: 6px solid #c7d8c6; /*soft sage*/
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
 }
 
 /*Style rules for footer content*/
 footer {
-	background-color: #F3EDE4;
-	text-align: center;
-	padding: 0 1rem;
-	font-size: 0.9rem;
-	color: #4A4A4A;
-	border-top: 4px solid #9BB594;
-	border-bottom: 4px solid #9BB594;
-}
-
-
+  background-color: #F3EDE4;
+  text-align: center;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+  color: #4A4A4A;
+  border-top: 4px solid #
 
