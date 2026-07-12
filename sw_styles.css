@@ -45,7 +45,7 @@ header h1 {
   background-color: #FDFBF7;
   padding: 10px 0;
   border-bottom: 4px solid #9BB594;
-  overflow: hidden; /* clears the floats so the bar keeps its height */
+  overflow: hidden; 
 }
 
 /* Logo floats left */
@@ -54,12 +54,13 @@ header h1 {
   width: 250px;
   height: auto;
   margin-left: 20px;
+  padding-right: 40px;
 }
 
 /* Navigation floats left, next to logo */
 .main-nav {
   float: left;
-  margin-left: 40px; /* spacing between logo and nav */
+  padding-top: 10px;
 }
 
 .main-nav a {
@@ -85,6 +86,7 @@ header h1 {
   width: 28px;
   height: auto;
   margin-right: 20px;
+  padding-top: 6px;
 }
 
 
