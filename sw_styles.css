@@ -89,6 +89,19 @@ header h1 {
   padding-top: 6px;
 }
 
+.cart-link {
+  background-color: #5A3E2B;
+  border: 1px solid #D6C7B5;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+}
+
+.cart-link:hover {
+  background-color: #E8DCC8;
+  border-color: #CBB9A4;
+}
+
 
 /*Style rules for main content*/
 main {
