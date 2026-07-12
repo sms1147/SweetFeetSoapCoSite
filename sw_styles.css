@@ -1,7 +1,7 @@
-forming /*
+/*
 Author: Shelly Smith
 Date: June 2026
-File Name: new_styles.css
+File Name: sw_styles.css
 */
 
 /*CSS Reset */
@@ -48,14 +48,18 @@ header h1 {
 	text-align: center;
 }
 
+	
+}
+
 .logo {
+	display: inline-block;
 	width: 250px;
 	height: auto;
-	margin-bottom: 10px;
+	margin-right: 20px;
 }
 
 .main-nav {
-	margin-top: 10px;
+	display: inline-block;
 }
 
 .main-nav a {
@@ -80,8 +84,7 @@ header h1 {
 .cart-icon {
 	width: 28px;
 	height: auto;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-left: 10px;
 }
 
 /*Style rules for main content*/
