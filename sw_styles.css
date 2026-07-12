@@ -97,6 +97,7 @@ header h1 {
   text-align: center;
   position: relative;
   top: 20px;
+  padding-right: 10px;
 }
 
 .cart-link:hover {
