@@ -60,7 +60,7 @@ header h1 {
 /* Navigation floats left, next to logo */
 .main-nav {
   float: left;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .main-nav a {
@@ -83,7 +83,7 @@ header h1 {
 /* Cart floats right */
 .cart-icon {
   
-  width: 20px;
+  width: 15px;
   height: auto;
 }
 
