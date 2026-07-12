@@ -82,7 +82,7 @@ header h1 {
 
 /* Cart floats right */
 .cart-icon {
-  width: 28px;
+  width: 25px;
   height: auto;
 }
 
@@ -94,6 +94,7 @@ header h1 {
   padding: 0.7rem 1rem;
   margin: 0 0.3rem;
   text-align: center;
+  margin-top: 5px;
 }
 
 .cart-link:hover {
