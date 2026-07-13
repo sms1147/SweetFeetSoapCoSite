@@ -83,7 +83,7 @@ header h1 {
 
 /* Cart size */
 .cart-icon {
-  width: 20px;
+  width: 22px;
   height: auto;
 }
 
@@ -92,7 +92,7 @@ header h1 {
   background-color: #5A3E2B;
   border: 1px solid #D6C7B5;
   border-radius: 8px;
-  padding: 0.4.5rem 1rem;
+  padding: 0.3rem 1rem;
   margin: 0 0.3rem;
   text-align: center;
   position: relative;
