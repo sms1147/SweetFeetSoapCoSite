@@ -167,6 +167,29 @@ main {
   color: #0066cc; /* highlight color on hover */
 }
 
+/*Style rules for catalog grid*/
+.catalog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.catalog-item {
+  background-color: #fff;
+  border: 2px solid #E8DCC8;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item img {
+  max-width: 50%;
+  border-radius: 8px;
+}
+
 .map {
   border: 6px solid #c7d8c6; /*soft sage*/
   border-radius: 10px;
