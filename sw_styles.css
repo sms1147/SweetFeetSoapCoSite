@@ -160,11 +160,12 @@ main {
 }
 
 .product-card h3 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #2F4F2F;
 }
 
 .product-card h3 a:hover {
-    color: #0066cc; /* highlight color on hover */
+  color: #0066cc; /* highlight color on hover */
 }
 
 .map {
