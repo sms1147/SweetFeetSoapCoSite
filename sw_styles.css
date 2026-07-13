@@ -159,6 +159,14 @@ main {
   border-radius: 8px;
 }
 
+.product-card h3 a {
+    text-decoration: none;
+}
+
+.product-card h3 a:hover {
+    color: #0066cc; /* highlight color on hover */
+}
+
 .map {
   border: 6px solid #c7d8c6; /*soft sage*/
   border-radius: 10px;
