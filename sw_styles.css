@@ -61,7 +61,7 @@ header h1 {
 .main-nav {
   float: left;
   padding-top: 30px;
-  padding-left: 4px;
+  padding-left: 4.5px;
 }
 
 .main-nav a {
@@ -81,7 +81,7 @@ header h1 {
   border-color: #CBB9A4;
 }
 
-/* Cart floats right */
+/* Cart size */
 .cart-icon {
   width: 20px;
   height: auto;
@@ -92,7 +92,7 @@ header h1 {
   background-color: #5A3E2B;
   border: 1px solid #D6C7B5;
   border-radius: 8px;
-  padding: 0.4rem 1rem;
+  padding: 0.4.5rem 1rem;
   margin: 0 0.3rem;
   text-align: center;
   position: relative;
