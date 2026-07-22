@@ -186,8 +186,13 @@ main {
 }
 
 .catalog-item img {
+  transition: transform 0.3s ease; /*animation timing*/
   max-width: 50%;
   border-radius: 8px;
+}
+
+.catalog-item img:hover {
+  transform: scale(1.1); /*slightly zoom in*/
 }
 
 .add-to-cart {
