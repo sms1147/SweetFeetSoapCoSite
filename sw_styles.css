@@ -207,6 +207,10 @@ main {
   border-color: #CBB9A4;
 }
 
+.catalog-nav {
+  display: none;
+}
+
 .product-section {
   flex: 1;
   padding: 20px;
@@ -269,5 +273,31 @@ footer {
   font-size: 0.9rem;
   color: #4A4A4A;
   border-top: 4px solid #9BB594;
+}
+
+/* Mobile Styles*/
+@media (max-width: 768px) {
+  .catalog-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .catalog-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #5A3E2B;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid D6C7B5;
+  }
+
+  .catalog-nav a:hover {
+    background-color: #2F4F2F;
+    border-color: #CBB9A4;
+  }
 }
 
