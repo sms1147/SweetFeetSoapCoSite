@@ -167,6 +167,25 @@ main {
   color: #0066cc; /* highlight color on hover */
 }
 
+.shop-layout {
+  display: flex;
+}
+
+.shop-sidebar {
+  width: 220px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: FAF3E0;
+  padding: 15px;
+  border-right: 1px solid #D2B48C;
+}
+
+.product-section {
+  flex: 1;
+  padding: 20px;
+}
+
 /*Style rules for catalog grid*/
 .catalog-grid {
   display: flex;
