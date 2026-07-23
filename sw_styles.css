@@ -181,6 +181,32 @@ main {
   border-right: 1px solid #D2B48C;
 }
 
+.shop-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.shop-sidebar ul li {
+  Margin-bottom: 12px;
+}
+
+.shop-sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  background-color: #5A3E2B;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #D6C7B5;
+  text-align: center;
+}
+
+.shop-sidebar ul li a:hover {
+  background-color: #2F4F2F;
+  border-color: #CBB9A4;
+}
+
 .product-section {
   flex: 1;
   padding: 20px;
