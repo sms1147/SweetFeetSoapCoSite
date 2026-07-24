@@ -140,17 +140,18 @@ main {
 /*Style rules for product grid*/
 .product-grid {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  justify-content: center;
 }
 
 .product-card {
+  flex: 1 1 200px;
+  max-width: 300px;
   background-color: #fff;
   border: 2px solid #E8DCC8;
   border-radius: 10px;
-  min-width: 180px;
-  max-width: 100%;
   text-align: center;
   padding: 0;
   margin: 0;
