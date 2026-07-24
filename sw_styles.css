@@ -244,12 +244,25 @@ gift-baskets {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: #fff;
   border: 2px solid #E8DCC8;
   border-radius: 10px;
   width: 180px;
   text-align: center;
+  padding: bottom;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item button {
+  margin-top: 0.5rem;
+}
+
+.catalog-item .details {
+  margin-top: 0.5rem;
 }
 
 .catalog-item img {
