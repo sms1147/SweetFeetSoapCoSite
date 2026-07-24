@@ -285,11 +285,24 @@ footer {
 
 /*Tablet screen*/
 @media (max-width: 768px) {
+  .product-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
   .product-card {
     flex: 1 1 45%;
+    max-width: 300px;
   }
 }
-@media (max-width: 768px) {
+
+.sidebar, .shop {
+  display: none;
+}
+
   .catalog-nav {
     display: flex;
     flex-wrap: wrap;
