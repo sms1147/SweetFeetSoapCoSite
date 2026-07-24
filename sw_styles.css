@@ -308,7 +308,12 @@ footer {
 
 /*Hide buttons for desktop and laptop*/
 @media (min-width: 769px) {
-   .product-grid {
+  .hero,
+  .product-grid {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .product-grid {
     display: flex;
     flex-wrap: nowrap; 
     justify-content: space-between; 
