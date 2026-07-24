@@ -316,8 +316,8 @@ footer {
   }
 
   .product-card {
-    flex: 0 0 200px;     
-    max-width: 300px;
+    flex: 0 0 160px;     
+    max-width: 160px;
   }
   
   .catalog-nav {
