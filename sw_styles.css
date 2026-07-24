@@ -311,15 +311,13 @@ footer {
    .product-grid {
     display: flex;
     flex-wrap: nowrap; 
-    justify-content: flex-start;
-    overflow-x: auto;    
+    justify-content: space-between; 
     gap: 1.5rem;
-    padding-left: 0;
   }
 
   .product-card {
-    flex: 0 0 160px;     
-    max-width: 160px;
+    flex: 0 0 12%;     
+    max-width: none;
   }
   
   .catalog-nav {
