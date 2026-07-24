@@ -172,6 +172,19 @@ main {
   color: #0066cc; /* highlight color on hover */
 }
 
+#soap-bars,
+#body-wash,
+#liquid-soap,
+#lotion,
+#hand-sanitizer,
+#exfoliation,
+#foot-care,
+gift-baskets {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 .shop-layout {
   display: flex;
 }
