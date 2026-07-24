@@ -283,7 +283,12 @@ footer {
   border-top: 4px solid #9BB594;
 }
 
-/* Mobile Styles*/
+/*Tablet screen*/
+@media (max-width: 768px) {
+  .product-card {
+    flex: 1 1 45%;
+  }
+}
 @media (max-width: 768px) {
   .catalog-nav {
     display: flex;
@@ -291,6 +296,18 @@ footer {
     justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1rem;
+  }
+
+/* Mobile Styles*/
+@media (max-width: 480px) {
+  .product-card {
+    flex: 1 1 100%;  /* one card per row */
+  }
+}
+
+  .catalog-nav {
+    flex-direction: column;
+    align-items: center;
   }
 
   .catalog-nav a {
