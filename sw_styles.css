@@ -253,7 +253,7 @@ gift-baskets {
   border-radius: 10px;
   width: 180px;
   text-align: center;
-  padding: bottom;
+  padding-bottom: 1rem;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
