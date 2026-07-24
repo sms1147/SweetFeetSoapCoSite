@@ -310,9 +310,11 @@ footer {
 @media (min-width: 769px) {
    .product-grid {
     display: flex;
-    flex-wrap: nowrap;   
+    flex-wrap: nowrap; 
+    justify-content: flex-start;
     overflow-x: auto;    
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-left: 0;
   }
 
   .product-card {
