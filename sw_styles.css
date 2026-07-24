@@ -308,6 +308,18 @@ footer {
 
 /*Hide buttons for desktop and laptop*/
 @media (min-width: 769px) {
+   .product-grid {
+    display: flex;
+    flex-wrap: nowrap;   
+    overflow-x: auto;    
+    gap: 2rem;
+  }
+
+  .product-card {
+    flex: 0 0 200px;     
+    max-width: 300px;
+  }
+  
   .catalog-nav {
     display: none;
   }
