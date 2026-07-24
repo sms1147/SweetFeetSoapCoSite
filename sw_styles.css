@@ -25,9 +25,6 @@ img {
   display: block;
 }
 
-/*Style rules for mobile viewport*/
-
-
 /*Style rules for header*/
 header {
   background-color: #FAF7F2;
@@ -281,6 +278,13 @@ footer {
   font-size: 0.9rem;
   color: #4A4A4A;
   border-top: 4px solid #9BB594;
+}
+
+/*Hide buttons for desktop and laptop*/
+@media (min-width: 769px) {
+  .catalog-nav {
+    display: none;
+  }
 }
 
 /*Tablet screen*/
