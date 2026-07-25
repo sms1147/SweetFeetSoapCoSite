@@ -1,8 +1,13 @@
-let cart = [];
+// Load saved cart from localStorage
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function renderCart() {
   const cartContainer = document.getElementById("cart-items");
   cartContainer.innerHTML = "";
+
+  if (cart.length === 0) {
+    cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+  }
 
   cart.forEach((item, index) => {
     const div = document.createElement("div");
@@ -21,12 +26,12 @@ function renderCart() {
 
 function updateQuantity(index, newQty) {
   cart[index].quantity = parseInt(newQty);
-  updateTotal();
+  saveAndRender();
 }
 
 function removeItem(index) {
   cart.splice(index, 1);
-  renderCart();
+  saveAndRender();
 }
 
 function updateTotal() {
@@ -34,8 +39,21 @@ function updateTotal() {
   document.getElementById("cart-total").textContent = `Total: $${total.toFixed(2)}`;
 }
 
-document.getElementById("checkout-btn").addEventListener("click", () => {
-  alert("Proceeding to checkout!");
-});
+// Helper function to save changes to localStorage and re-draw the cart
+function saveAndRender() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+  renderCart();
+}
+
+const checkoutBtn = document.getElementById("checkout-btn");
+if (checkoutBtn) {
+  checkoutBtn.addEventListener("click", () => {
+    if (cart.length === 0) {
+      alert("Your cart is empty!");
+    } else {
+      alert("Proceeding to checkout!");
+    }
+  });
+}
 
 renderCart();
