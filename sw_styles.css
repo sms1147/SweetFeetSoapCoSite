@@ -141,6 +141,7 @@ main {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -311,7 +312,7 @@ footer {
 @media (min-width: 769px) {
   .hero,
   .product-grid {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
   }
   .product-grid {
