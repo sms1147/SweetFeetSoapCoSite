@@ -554,8 +554,8 @@ main {
 
 /* Style rules for About Us frame border */
 .about-frame {
-  border: 40px solid transparent;
-  border-image: url('images/meadow.png') 40 stretch;
+  border: 50px solid transparent;
+  border-image: url('images/meadow.png') 50 stretch;
   background-color: #FAF7F2;
   padding: 2.5rem;
   margin: 2rem auto;
