@@ -564,8 +564,6 @@ main {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-border-image: url('images/meadow.png') 30 round;
-
 /*Style rules for footer content*/
 footer {
   background-color: #F3EDE4;
@@ -607,7 +605,6 @@ footer {
     display: inline;
     color: #4A4A4A;
   }
-}
 
 /*Tablet screen*/
 @media (max-width: 768px) {
