@@ -525,6 +525,33 @@ main {
   flex-direction: row;
 }
 
+.contact-hero {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.contact-image {
+  flex: 1.2;
+}
+
+.contact-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 /* Style rules for About Us frame border */
 .about-frame {
   border: 30px solid transparent;
