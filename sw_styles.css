@@ -527,12 +527,12 @@ main {
 
 /* Style rules for About Us frame border */
 .about-frame {
-  border: 18px solid transparent;
+  border: 30px solid transparent;
   border-image: url('images/meadow.png') 30 stretch;
   background-color: #FAF7F2;
   padding: 2.5rem;
   margin: 2rem auto;
-  max-width: 1000px;
+  max-width: 1150px;
   border-radius: 8px;
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
