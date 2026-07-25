@@ -7,15 +7,25 @@ function renderCart() {
 
   if (cart.length === 0) {
     cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    updateTotal();
     return;
   }
 
   cart.forEach((item, index) => {
     const div = document.createElement("div");
-    div.className = "cart-item";
+    div.className = "cart-item-card";
     div.innerHTML = `
-      <span class="item-name">${item.name} $${item.price.toFixed(2)}</span>
-      <input type="number" min="1" max="999" value="${item.quantity}" class="qty-input" onchange="updateQuantity(${index}, this.value)">
+      <div class="cart-item-image">
+        <img src="${item.image}" alt="${item.name}">
+      </div>
+      <div class="cart-item-info">
+        <span class="item-name">${item.name}</span>
+        <span class="item-price">$${item.price.toFixed(2)}</span>
+      </div>
+      <div class="cart-item-qty">
+        <label for="qty-${index}">Quantity:</label>
+        <input type="number" id="qty-${index}" min="1" max="999" value="${item.quantity}" class="qty-input" onchange="updateQuantity(${index}, this.value)">
+      </div>
       <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
     `;
     cartContainer.appendChild(div);
@@ -25,7 +35,10 @@ function renderCart() {
 }
 
 function updateQuantity(index, newQty) {
-  cart[index].quantity = parseInt(newQty);
+  let qty = parseInt(newQty);
+  if (isNaN(qty) || qty < 1) qty = 1;
+  if (qty > 999) qty = 999;
+  cart[index].quantity = qty;
   saveAndRender();
 }
 
