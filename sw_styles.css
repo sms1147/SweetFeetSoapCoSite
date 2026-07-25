@@ -311,7 +311,7 @@ footer {
 @media (min-width: 769px) {
   .hero,
   .product-grid {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
   }
   .product-grid {
