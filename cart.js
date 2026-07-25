@@ -7,6 +7,7 @@ function renderCart() {
 
   if (cart.length === 0) {
     cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+    return;
   }
 
   cart.forEach((item, index) => {
