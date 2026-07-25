@@ -14,10 +14,9 @@ function renderCart() {
     const div = document.createElement("div");
     div.className = "cart-item";
     div.innerHTML = `
-      <span>${item.name}</span>
-      <span>$${item.price.toFixed(2)}</span>
-      <input type="number" min="1" value="${item.quantity}" onchange="updateQuantity(${index}, this.value)">
-      <button onclick="removeItem(${index})">Remove</button>
+      <span class="item-name">${item.name} $${item.price.toFixed(2)}</span>
+      <input type="number" min="1" max="999" value="${item.quantity}" class="qty-input" onchange="updateQuantity(${index}, this.value)">
+      <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
     `;
     cartContainer.appendChild(div);
   });
