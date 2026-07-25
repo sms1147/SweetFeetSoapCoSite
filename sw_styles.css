@@ -190,6 +190,23 @@ header h1 {
   background-color: #842523;
 }
 
+#checkout-btn {
+  background-color: #5A3E2B;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#checkout-btn:hover {
+  background-color: #2F4F2F;
+}
+
 /* Two-Column Cart Page Layout */
 .cart-page-layout {
   display: flex;
