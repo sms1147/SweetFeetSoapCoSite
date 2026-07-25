@@ -369,6 +369,15 @@ footer {
   .catalog-nav {
     display: none;
   }
+
+  .mobile-tel-link {
+    display: none;
+  }
+
+  .desktop-tel-text {
+    display: inline;
+    color: #4A4A4A;
+  }
 }
 
 /*Tablet screen*/
@@ -411,6 +420,16 @@ footer {
   .catalog-nav a:hover {
     background-color: #2F4F2F;
     border-color: #CBB9A4;
+  }
+
+  .mobile-tel-link {
+    display: inline;
+    color: #2F4F2F;
+    font-weight: bold;
+  }
+
+  .desktop-tel-text {
+    display: none;
   }
 }
 
