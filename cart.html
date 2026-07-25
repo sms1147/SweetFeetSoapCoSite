@@ -31,15 +31,52 @@
 	</header>
 
 	<!--Cart Content-->
-	<main class="cart-container">
-		<h2>Your Shopping Cart</h2>
-		<div id="cart-items"></div>
+<main class="cart-page-layout">
+    
+    <!-- Left Column: Active Cart Items & Summary -->
+    <div class="cart-main-section">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items"></div>
 
-		<div class="cart-summary">
-			<p id="cart-total">Total: $0.00</p>
-			<button id="checkout-btn">Checkout</button>
-		</div>
-	</main>
+        <div class="cart-summary">
+            <p id="cart-total">Total: $0.00</p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Right Column: Recommended Products Sidebar -->
+    <aside class="recommended-section">
+        <h3>Recommended Products</h3>
+        
+        <div class="recommended-item">
+            <img src="images/soap-goatmilk.png" alt="Got Your Goat Milk">
+            <div class="rec-info">
+                <p class="rec-name">Got Your Goat Milk</p>
+                <p class="price">$10.99</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="recommended-item">
+            <img src="images/lotion-butter.png" alt="Butter My Buns">
+            <div class="rec-info">
+                <p class="rec-name">Butter My Buns</p>
+                <p class="price">$16.99</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="recommended-item">
+            <img src="images/exfol-buff.png" alt="Buff That Stuff">
+            <div class="rec-info">
+                <p class="rec-name">Buff That Stuff</p>
+                <p class="price">$15.99</p>
+            </div>
+            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+        </div>
+    </aside>
+
+</main>
 
 	<!--Footer-->
 	<footer>
