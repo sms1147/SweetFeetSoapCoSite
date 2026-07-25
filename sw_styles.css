@@ -525,10 +525,11 @@ main {
   flex-direction: row;
 }
 
+/* Card-Styled Contact Form Section (Matches Shopping Cart aesthetic) */
 .contact-main {
     padding: 2rem 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -559,28 +560,41 @@ main {
   gap: 0.8rem;
 }
 
-.contact-form {
+/* Contact Form Card Container */
+.contact-form-section {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
+}
+
+.contact-card {
+    background-color: #fff;
+    border: 2px solid #E8DCC8;
+    border-radius: 10px;
     padding: 2.5rem;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+    margin: 0 1rem;
+    box-sizing: border-box;
 }
 
-.contact-form h2 {
-    margin-bottom: 0.5rem;
-    color: #2c3e50;
+.contact-card h2 {
+    font-family: Georgia, serif;
+    color: #2F4F2F;
     font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
 }
 
-.contact-form p {
+.contact-card .form-intro {
+    color: #4A4A4A;
     margin-bottom: 1.5rem;
-    color: #7f8c8d;
     font-size: 0.95rem;
 }
 
+/* Form Group & Input Styling */
 .form-group {
     margin-bottom: 1.25rem;
     display: flex;
@@ -588,45 +602,48 @@ main {
 }
 
 .form-group label {
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #34495e;
+    font-weight: bold;
+    color: #5A3E2B;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group textarea {
     padding: 0.75rem;
-    border: 1px solid #bdc3c7;
+    border: 1px solid #D6C7B5;
     border-radius: 4px;
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
     font-family: inherit;
+    background-color: #fff;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #3498db;
+    border-color: #2F4F2F;
     outline: none;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+    box-shadow: 0 0 0 3px rgba(47, 79, 47, 0.15);
 }
 
-.submit-btn {
-    background-color: #3498db;
-    color: white;
-    padding: 0.85rem 1.5rem;
+/* Submit Button (Styled to match cart action buttons) */
+.cart-action-btn {
+    background-color: #A94442;
+    color: #fff;
     border: none;
     border-radius: 4px;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100%;
 }
 
-.submit-btn:hover {
-    background-color: #2980b9;
+.cart-action-btn:hover {
+    background-color: #842523;
 }
 
 /* Style rules for About Us frame border */
