@@ -109,24 +109,85 @@ header h1 {
 }
 
 #cart-items {
-  display: grid;
-  /* Column 1: Automatically sizes to the widest product name + price string
-     Column 2: Fixed width of 60px for the quantity box (comfortably fits up to 999)
-     Column 3: Remaining space for the Remove button */
-  grid-template-columns: max-content 60px auto;
-  gap: 12px 15px;
-  align-items: center;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-.cart-item {
-  display: contents; /* Allows the inner spans, inputs, and buttons to act directly as grid cells */
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 2px solid #E8DCC8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 1.5rem;
+}
+
+.cart-item-image {
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #2F4F2F;
+}
+
+.item-price {
+  color: #4A4A4A;
+}
+
+.cart-item-qty {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.cart-item-qty label {
+  font-weight: bold;
+  color: #5A3E2B;
 }
 
 .qty-input {
-  width: 50px;
+  width: 60px;
   text-align: center;
-  padding: 4px;
+  padding: 6px;
+  border: 1px solid #D6C7B5;
+  border-radius: 4px;
+}
+
+.remove-btn {
+  background-color: #A94442;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #842523;
 }
 
 
