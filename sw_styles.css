@@ -108,6 +108,27 @@ header h1 {
   border-color: #CBB9A4;
 }
 
+#cart-items {
+  display: grid;
+  /* Column 1: Automatically sizes to the widest product name + price string
+     Column 2: Fixed width of 60px for the quantity box (comfortably fits up to 999)
+     Column 3: Remaining space for the Remove button */
+  grid-template-columns: max-content 60px auto;
+  gap: 12px 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: contents; /* Allows the inner spans, inputs, and buttons to act directly as grid cells */
+}
+
+.qty-input {
+  width: 50px;
+  text-align: center;
+  padding: 4px;
+}
+
 
 /*Style rules for main content*/
 main {
