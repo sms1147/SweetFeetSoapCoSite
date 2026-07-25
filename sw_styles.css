@@ -298,6 +298,43 @@ main {
   max-width: 600px;
 }
 
+/* Style rules for Employee Spotlight cards */
+.spot-light.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background-color: #fff;
+  border: 2px solid #E8DCC8;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Image sizing inside the spotlight card */
+.spot-light.card img {
+  flex: 0 0 250px; 
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Text content container */
+.spotlight-content {
+  flex: 1;
+  text-align: left; 
+}
+
+/* Alternating layout: Image on the right */
+.spot-light.card.image-right {
+  flex-direction: row-reverse;
+}
+
+/* Alternating layout: Image on the left */
+.spot-light.card.image-left {
+  flex-direction: row;
+}
+
 /*Style rules for footer content*/
 footer {
   background-color: #F3EDE4;
