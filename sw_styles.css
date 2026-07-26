@@ -762,7 +762,8 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 900;
+    width: 85%;
+    max-width: 850;
     margin: 2rem auto; 
     padding: 3rem 2rem; 
     border-radius: 12px;
