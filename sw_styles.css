@@ -323,8 +323,8 @@ main {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/*Style rules for product grid*/
-.product-grid {
+/*Style rules for featured grid*/
+.featured-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -333,7 +333,7 @@ main {
   justify-content: center;
 }
 
-.product-card {
+.featured-card {
   flex: 1 1 200px;
   max-width: 300px;
   background-color: #fff;
@@ -345,7 +345,7 @@ main {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.product-card img {
+.featured-card img {
   display: block;
   width: 100%;
   height: auto;
@@ -353,12 +353,12 @@ main {
   border-radius: 8px;
 }
 
-.product-card h3 a {
+.featured-card h3 a {
   text-decoration: none;
   color: #2F4F2F;
 }
 
-.product-card h3 a:hover {
+.featured-card h3 a:hover {
   color: #0066cc; 
 }
 
