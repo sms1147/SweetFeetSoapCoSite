@@ -43,7 +43,6 @@ header h1 {
   color: #6A8F7A;
 }
 
-
 /*Style rules for Top Bar and navigation area*/
 .navbar {
   background-color: #FDFBF7;
@@ -289,7 +288,6 @@ header h1 {
   background-color: #2F4F2F;
 }
 
-
 /*Style rules for main content*/
 main {
   padding: 2rem;
@@ -458,14 +456,14 @@ main {
 }
 
 .catalog-item img {
-  transition: transform 0.3s ease; /*animation timing*/
+  transition: transform 0.3s ease;
   max-width: 100%;
   height: auto;
   border-radius: 0;
 }
 
 .catalog-item img:hover {
-  transform: scale(1.1); /*slightly zoom in*/
+  transform: scale(1.1);
 }
 
 /* Quantity Input Styling */
@@ -492,7 +490,7 @@ main {
 }
 
 .map {
-  border: 6px solid #c7d8c6; /*soft sage*/
+  border: 6px solid #c7d8c6;
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 600px;
@@ -511,7 +509,6 @@ main {
   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Image sizing inside the spotlight card */
 .spot-light.card img {
   flex: 0 0 250px; 
   max-width: 250px;
@@ -519,23 +516,20 @@ main {
   border-radius: 8px;
 }
 
-/* Text content container */
 .spotlight-content {
   flex: 1;
   text-align: left; 
 }
 
-/* Alternating layout: Image on the right */
 .spot-light.card.image-right {
   flex-direction: row-reverse;
 }
 
-/* Alternating layout: Image on the left */
 .spot-light.card.image-left {
   flex-direction: row;
 }
 
-/* Card-Styled Contact Form Section (Matches Shopping Cart aesthetic) */
+/* Contact Form Section */
 .contact-main {
     padding: 2rem 1rem;
     display: flex;
@@ -570,7 +564,6 @@ main {
   gap: 0.8rem;
 }
 
-/* Contact Form Card Container */
 .contact-form-section {
     padding: 1.5rem 0;
     display: flex;
@@ -604,7 +597,6 @@ main {
     font-size: 0.95rem;
 }
 
-/* Form Group & Input Styling */
 .form-group {
     margin-bottom: 1.25rem;
     display: flex;
@@ -638,7 +630,6 @@ main {
     box-shadow: 0 0 0 3px rgba(47, 79, 47, 0.15);
 }
 
-/* Submit Button (Styled to match cart action buttons) */
 .cart-action-btn {
     background-color: #A94442;
     color: #fff;
@@ -656,14 +647,13 @@ main {
     background-color: #842523;
 }
 
-/* Shipping Section Container (Stacked below the main cart layout) */
+/* Shipping Section Container */
 .shipping-section {
     max-width: 1200px;
     margin: 3rem auto 2rem auto;
     width: 100%;
 }
 
-/* Flexbox container to align map and table side-by-side */
 .shipping-container {
     display: flex;
     gap: 2rem;
@@ -686,7 +676,6 @@ main {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Styled Table */
 .shipping-table {
     width: 100%;
     border-collapse: collapse;
@@ -725,7 +714,6 @@ main {
     color: #4A4A4A;
 }
 
-/* Alternating Row Colors */
 .shipping-table tbody tr:nth-child(even) {
     background-color: #FAF7F2;
 }
@@ -748,7 +736,6 @@ main {
     font-size: 0.9rem;
 }
 
-/* Style rules for About Us frame border */
 .about-frame {
   border: 50px solid transparent;
   border-image: url('images/meadow.png') 50 stretch;
@@ -774,7 +761,6 @@ main {
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Individual Blog Post Card Aesthetic */
 .blog-entry {
     background-color: #fff;
     border: 2px solid #E8DCC8;
@@ -811,10 +797,9 @@ main {
     line-height: 1.6;
 }
 
-/* Responsive Video Container for YouTube Tutorial */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     border: 2px solid #E8DCC8;
@@ -832,26 +817,23 @@ main {
     border: none;
 }
 
-/* Keyframes for sliding side-to-side and returning to center */
 @keyframes slideTitle {
     0% {
-        transform: translateX(-35%); /* Starts shifted toward the left side of the card */
+        transform: translateX(-35%);
     }
     50% {
-        transform: translateX(35%);  /* Sweeps over to the right side of the card */
+        transform: translateX(35%); 
     }
     100% {
-        transform: translateX(0);    /* Ends up back in its normal, default placement */
+        transform: translateX(0);    
     }
 }
 
-/* Class applied to the Treasure Hunt title */
 .slide-title {
-    animation: slideTitle 3s ease-in-out; /* Takes 3 seconds to complete the motion */
+    animation: slideTitle 3s ease-in-out;
 }
 
-
-/*Style rules for footer content*/
+/* Footer styling */
 footer {
   background-color: #F3EDE4;
   text-align: center;
@@ -861,7 +843,7 @@ footer {
   border-top: 4px solid #9BB594;
 }
 
-/* Desktop and laptop screen media query */
+/* Media Queries */
 @media (min-width: 769px) {
   .hero,
   .featured-grid {
@@ -894,7 +876,6 @@ footer {
   }
 }
 
-/* Tablet screen media query */
 @media (max-width: 768px) {
   .featured-grid {
     display: flex;
@@ -956,10 +937,9 @@ footer {
   }
 }
 
-/* Mobile Styles*/
 @media (max-width: 480px) {
   .featured-card {
-    flex: 1 1 100%;  /* one card per row */
+    flex: 1 1 100%; 
   }
 
   .catalog-nav {
