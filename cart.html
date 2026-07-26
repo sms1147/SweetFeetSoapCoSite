@@ -23,105 +23,132 @@
 			<a href="about.html">About Us</a> 
 			<a href="products.html">Product Catalog</a> 
 			<a href="contact.html">Contact Us</a> 
-			<a href="blog">Blog.html</a> 
+			<a href="blog.html">Blog.html</a> 
 			<a href="cart.html" class="cart-link" aria-label="Shopping Cart">
 				<img src="images/cart-icon.png" alt="" class="cart-icon">
 			</a> 
 		</nav>
 	</header>
 
-	<!--Cart Content-->
-<main class="cart-page-layout">
+	<!--Main Content Area-->
+<main>
     
-    <!-- Left Column: Active Cart Items & Summary -->
-    <div class="cart-main-section">
-        <h2>Your Shopping Cart</h2>
-        <div id="cart-items"></div>
+    <!-- Two-Column Cart Page Layout (Cart Items + Recommended Products Sidebar) -->
+    <div class="cart-page-layout">
+        
+        <!-- Left Column: Active Cart Items & Summary -->
+        <div class="cart-main-section">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items"></div>
 
-        <div class="cart-summary">
-            <p id="cart-total">Total: $0.00</p>
-            <button id="checkout-btn">Checkout</button>
+            <div class="cart-summary">
+                <p id="cart-total">Total: $0.00</p>
+                <button id="checkout-btn">Checkout</button>
+            </div>
         </div>
+
+        <!-- Right Column: Recommended Products Sidebar -->
+        <aside class="recommended-section">
+            <h3>Recommended Products</h3>
+            
+            <div class="recommended-item">
+                <img src="images/soap-goatmilk.png" alt="Got Your Goat Milk">
+                <div class="rec-info">
+                    <p class="rec-name">Got Your Goat Milk</p>
+                    <p class="price">$10.99</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="recommended-item">
+                <img src="images/lotion-butter.png" alt="Butter My Buns">
+                <div class="rec-info">
+                    <p class="rec-name">Butter My Buns</p>
+                    <p class="price">$16.99</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+            </div>
+
+            <div class="recommended-item">
+                <img src="images/exfol-buff.png" alt="Buff That Stuff">
+                <div class="rec-info">
+                    <p class="rec-name">Buff That Stuff</p>
+                    <p class="price">$15.99</p>
+                </div>
+                <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+            </div>
+        </aside>
+
     </div>
 
-    <!-- Right Column: Recommended Products Sidebar -->
-    <aside class="recommended-section">
-        <h3>Recommended Products</h3>
-        
-        <div class="recommended-item">
-            <img src="images/soap-goatmilk.png" alt="Got Your Goat Milk">
-            <div class="rec-info">
-                <p class="rec-name">Got Your Goat Milk</p>
-                <p class="price">$10.99</p>
+    <!-- Shipping Rates & Map Section (Side-by-Side Below Cart Items) -->
+    <section class="shipping-section">
+        <div class="shipping-container">
+            
+            <!-- Map Column -->
+            <div class="shipping-map-box">
+                <img src="images/regional_map.PNG" alt="Regional Shipping Map" class="shipping-map">
             </div>
-            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
+
+            <!-- Table Column -->
+            <div class="shipping-table-box">
+                <table class="shipping-table">
+                    <caption>Shipping Rates by Region</caption>
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>Weight up to 3 lbs</th>
+                            <th>Weight 3.01 - 5 lbs</th> 
+                            <th>Weight 5.01 - 8 lbs</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Northeast</strong></td>
+                            <td>$7-$9</td>
+                            <td>$9-$11</td>
+                            <td>$11-$13</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Southeast</strong></td>
+                            <td>$4-$6</td>
+                            <td>$6-$8</td>
+                            <td>$8-$10</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Midwest</strong></td>
+                            <td>$8-$10</td>
+                            <td>$10-$12</td>
+                            <td>$12-$14</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Southwest</strong></td>
+                            <td>$7-$9</td>
+                            <td>$9-$11</td>
+                            <td>$11-$13</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Northwest</strong></td>
+                            <td>$11-$13</td>
+                            <td>$13-$15</td>
+                            <td>$15-$17</td>
+                        </tr>
+                        <tr>
+                            <td><strong>West Coast</strong></td>
+                            <td>$10-$12</td>
+                            <td>$12-$14</td>
+                            <td>$14-$16</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
-        <div class="recommended-item">
-            <img src="images/lotion-butter.png" alt="Butter My Buns">
-            <div class="rec-info">
-                <p class="rec-name">Butter My Buns</p>
-                <p class="price">$16.99</p>
-            </div>
-            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
-        </div>
+        <!-- Note Placed Below Both Map and Table -->
+        <p class="shipping-note">For weights over 8lbs, please call or email us for shipping rates.</p>
+    </section>
 
-        <div class="recommended-item">
-            <img src="images/exfol-buff.png" alt="Buff That Stuff">
-            <div class="rec-info">
-                <p class="rec-name">Buff That Stuff</p>
-                <p class="price">$15.99</p>
-            </div>
-            <button class="add-to-cart" onclick="addToCartFromCart(this)">Add to Cart</button>
-        </div>
-    </aside>
-	<img src="images/regional_map.PNG" alt="Regional Shipping map" class="regmap">
-  <table>
-	  <caption>Shipping Rates by Region</caption>
-	    <tr>
-			<th>Region></th>
-			<th>Weight up to 3 lbs</th>
-			<th>Weight 3.01 - 5 lbs</th> 
-			<th>Weight 5.01 - 8 lbs</th>
-		</tr>
-	    <tr>
-			<th>Northeast</th>
-			<td>$7-$9</td>
-			<td>$9-$11</td>
-			<td>$11-$13</td>
-		</tr>
-	    <tr>
-			<th>Southeast</th>
-			<td>$4-$6</td>
-			<td>$6-$8</td>
-			<td>$8-$10</td>
-		</tr>
-	    <tr>
-			<th>Midwest</th>
-			<td>$8-$10</td>
-			<td>$10-$12</td>
-			<td>$12-$14</td>
-		</tr>
-	    <tr>
-			<th>Southwest</th>
-			<td>$7-$9</td>
-			<td>$9-$11</td>
-			<td>$11-$13</td>
-		</tr>
-	    <tr>
-			<th>Northwest</th>
-			<td>$11-$13</td>
-			<td>$13-$15</td>
-			<td>$15-$17</td>
-		</tr>
-	    <tr>
-		    <th>West Coast</th>
-	        <td>$10-$12</td>
-			<td>$12-$14</td>
-			<td>$14-$16</td>
-		</tr>
-  </table>
-	<p>For weights over 8lbs, please call or email us for shipping rates.</p>
 </main>
 
 	<!--Footer-->
