@@ -758,9 +758,15 @@ main {
 
 /* Blog Page Layout */
 .blog-grid {
+    background-image: url('images/soapbars-contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+    margin: 2rem auto; /* Centers the frame and leaves the green body background visible on the outer edges */
+    padding: 3rem 2rem; /* Creates the photo border frame effect around your cards */
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Individual Blog Post Card Aesthetic */
