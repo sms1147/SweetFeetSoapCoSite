@@ -822,6 +822,25 @@ main {
     border: none;
 }
 
+/* Keyframes for sliding side-to-side and returning to center */
+@keyframes slideTitle {
+    0% {
+        transform: translateX(-35%); /* Starts shifted toward the left side of the card */
+    }
+    50% {
+        transform: translateX(35%);  /* Sweeps over to the right side of the card */
+    }
+    100% {
+        transform: translateX(0);    /* Ends up back in its normal, default placement */
+    }
+}
+
+/* Class applied to the Treasure Hunt title */
+.slide-title {
+    animation: slideTitle 3s ease-in-out; /* Takes 3 seconds to complete the motion */
+}
+
+
 /*Style rules for footer content*/
 footer {
   background-color: #F3EDE4;
