@@ -763,8 +763,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     max-width: 900px;
-    margin: 2rem auto; /* Centers the frame and leaves the green body background visible on the outer edges */
-    padding: 3rem 2rem; /* Creates the photo border frame effect around your cards */
+    margin: 2rem auto; 
+    padding: 3rem 2rem; 
     border-radius: 12px;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
