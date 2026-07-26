@@ -1,3 +1,9 @@
+/*
+Author: Shelly Smith
+Date: June 2026
+File Name: cart.js
+*/
+
 // Load saved cart from localStorage
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
