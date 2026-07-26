@@ -469,6 +469,15 @@ main {
   transform: scale(1.1); /*slightly zoom in*/
 }
 
+/* Quantity Input Styling */
+.card-qty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+}
+
 .add-to-cart {
   background-color: #5A3E2B;
   color: #fff;
