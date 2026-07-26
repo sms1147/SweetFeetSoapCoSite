@@ -758,11 +758,11 @@ main {
 
 /* Blog Page Layout */
 .blog-grid {
-    background-image: url('images/soapbars-contact.jpg');
+    background-image: url('images/soapbars-contact.PNG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 900px;
+    max-width: 1000;
     margin: 2rem auto; 
     padding: 3rem 2rem; 
     border-radius: 12px;
