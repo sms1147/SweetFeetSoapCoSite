@@ -1,3 +1,9 @@
+/*
+Author: Shelly Smith
+Date: June 2026
+File Name: products.js
+*/
+
 // Load saved cart from localStorage if it exists, otherwise start fresh
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
