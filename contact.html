@@ -52,7 +52,7 @@
             <h2>Send Us a Message</h2>
             <p class="form-intro">Have questions about our soaps or your order? Fill out the form below!</p>
             
-            <form action="#" method="POST">
+            <form id="contactForm" action="#" method="POST">
                 <div class="form-group">
                     <label for="name">Full Name:</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your full name">
@@ -78,7 +78,7 @@
 			<div id="form-success-message" style="display: none; text-align: center; padding: 30px 0;">
 				<h3>Thank you!</h3>
 				<p> Your email is on its way! We typically reply within 24 to 48 hours! </p>
-        </div>
+			</div>
     </section>
 
     <!-- Map Image -->
@@ -100,6 +100,27 @@
 		<p><a href="contact.html#contact-form">sweetfeetsoap@sweetfeetsoapco.net</a></p>
 		<p>*Note: All images were generated and edited using AI (Copilot, Gemini, and Canva).</p>
 	</footer>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+	    const contactForm = document.getElementById('contactForm');
+	    const successMessage = document.getElementById('form-success-message');
 
+		if (contactForm) {
+			contactForm.addEventListener('submit', function(event) {
+				event.preventDefault(); // Prevents page reload
+
+				//Hide the input form
+				contactForm.style.display = 'none';
+
+				// reveal the success message inside the same card
+				if (successMessage) {
+				successMessage.style.display = 'block';
+	
+				}
+			});
+		}
+	});
+	</script>
 </body>
 </html>
