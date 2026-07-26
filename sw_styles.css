@@ -4,6 +4,12 @@ Date: June 2026
 File Name: sw_styles.css
 */
 
+/*
+Author: Shelly Smith
+Date: June 2026
+File Name: sw_styles.css
+*/
+
 /*CSS Reset */
 body, header, nav, main, footer, h1, div, img, ul {
   margin: 0;
@@ -646,6 +652,98 @@ main {
     background-color: #842523;
 }
 
+/* Shipping Section Container (Stacked below the main cart layout) */
+.shipping-section {
+    max-width: 1200px;
+    margin: 3rem auto 2rem auto;
+    width: 100%;
+}
+
+/* Flexbox container to align map and table side-by-side */
+.shipping-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shipping-map-box,
+.shipping-table-box {
+    flex: 1 1 450px;
+    max-width: 580px;
+}
+
+.shipping-map {
+    width: 100%;
+    height: auto;
+    border: 2px solid #E8DCC8;
+    border-radius: 10px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Styled Table */
+.shipping-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 2px solid #E8DCC8;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.shipping-table caption {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #2F4F2F;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+.shipping-table th {
+    background-color: #5A3E2B;
+    color: #ffffff;
+    padding: 12px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #D6C7B5;
+}
+
+.shipping-table td {
+    padding: 10px 12px;
+    text-align: center;
+    border: 1px solid #E8DCC8;
+    font-size: 0.9rem;
+    color: #4A4A4A;
+}
+
+/* Alternating Row Colors */
+.shipping-table tbody tr:nth-child(even) {
+    background-color: #FAF7F2;
+}
+
+.shipping-table tbody tr:hover {
+    background-color: #E4F0E2;
+}
+
+.shipping-table tfoot {
+    background-color: #FAF7F2;
+    border-top: 2px solid #D6C7B5;
+}
+
+.table-footer-note {
+    padding: 12px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #5A3E2B;
+    font-size: 0.9rem;
+}
+
 /* Style rules for About Us frame border */
 .about-frame {
   border: 50px solid transparent;
@@ -668,7 +766,7 @@ footer {
   border-top: 4px solid #9BB594;
 }
 
-/*Hide buttons for desktop and laptop*/
+/* Desktop and laptop screen media query */
 @media (min-width: 769px) {
   .hero,
   .product-grid {
@@ -699,8 +797,9 @@ footer {
     display: inline;
     color: #4A4A4A;
   }
+}
 
-/*Tablet screen*/
+/* Tablet screen media query */
 @media (max-width: 768px) {
   .product-grid {
     display: flex;
@@ -750,7 +849,6 @@ footer {
     width: 100%;
     position: static;
   }
-}
 
   .mobile-tel-link {
     display: inline;
@@ -774,5 +872,4 @@ footer {
     align-items: center;
   }
 }
-
 
