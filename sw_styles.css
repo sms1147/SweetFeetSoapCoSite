@@ -877,6 +877,12 @@ footer {
 }
 
 @media (max-width: 768px) {
+.hero {
+  height: auto;
+  min-height: 250px;
+  position: relative;
+}
+  
   .featured-grid {
     display: flex;
     flex-wrap: wrap;
@@ -938,6 +944,16 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero-text {
+    position: static;
+    right: auto;
+    top: auto;
+    width: 90%;
+    max-width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
+  }
+  
   .featured-card {
     flex: 1 1 100%; 
   }
