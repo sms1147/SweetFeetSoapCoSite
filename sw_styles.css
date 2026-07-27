@@ -879,19 +879,19 @@ footer {
 }
 
 @media (max-width: 768px) {
-/*Slim frame*/
-.about-frame {
-  width: 100%
-  margin: 10px 0;
-  padding: 15px;
-  border: 2px solid #9BB594;
-  border-image: none;
-  background-color: #FFF;
-  box-sizing: border-box;
-}
+/* Slim frame for About page */
+  .about-frame {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid #9BB594;
+    border-image: none;
+    background-color: #FFF;
+    box-sizing: border-box;
+  }
 
-/*Stack employee cards*/
-.spot-light.card,
+  /* Stack employee cards */
+  .spot-light.card,
   .spot-light.card.image-right,
   .spot-light.card.image-left {
     flex-direction: column;
@@ -901,79 +901,70 @@ footer {
     gap: 1.5rem;
   }
 
-.spot-light.card img {
+  .spot-light.card img {
     flex: none;
     width: 100%;
     max-width: 200px;
   }
 
-.spotlight-content {
-  width: 100%;
-  test-align: left;
-}
+  .spotlight-content {
+    width: 100%;
+    text-align: left;
+  }
 
-/*Slim border for blog section*/
-.blog-grid {
-  width: 100%;
-  padding: 0 8px;
-  box-sizing: border-box;
-}
+  /* Slim layout for blog section */
+  .blog-grid {
+    width: 100%;
+    padding: 0 8px;
+    box-sizing: border-box;
+  }
   
-.blog-entry {
-  width: 100%
-  margin: 10px 0;
-  padding: 15px;
-  border: 2px solid #9BB594;
-  border-image: none;
-  background-color: #FFF;
-  box-sizing: border-box;
-  border-width: 12px;
-  border-image-slice: 12;
-  padding: 1.2rem;
-  margin: 1rem 0.5rem;
-  max-width: 100%;
-  box-sizing: border-box;
-}
+  .blog-entry {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid #9BB594;
+    border-image: none;
+    background-color: #FFF;
+    box-sizing: border-box;
+  }
 
-/*Shrink shopping card cards*/
-.cart-item,
-.cart-card {
-  width: 100%;
-  max-width: 100%:
-  margin: 10px 0;
-  padding: 12px;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
+  /* Corrected selector matching cart-item-card */
+  .cart-item-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
 
-/*Shrink recommended products section and cards*/
-.recommended-products,
-.recommendation-card,
-.recommended-card {
-  width: 100%;
-  max-width: 100%;
-  margin: 15px 0;
-  padding: 15px;
-  box-sizing: border-box;
-}
+  /* Recommended products section and cards */
+  .recommended-section,
+  .recommended-item {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    box-sizing: border-box;
+  }
 
-/*Image scale down*/
-.cart-item img,
-  .recommendation-card img,
-  .recommended-card: img {
+  /* Image scale down */
+  .cart-item-card img,
+  .recommended-item img {
     max-width: 70px;
     height: auto;
   }
   
-.hero {
-  height: auto;
-  min-height: 250px;
-  position: relative;
-}
+  .hero {
+    height: auto;
+    min-height: 250px;
+    position: relative;
+  }
   
   .featured-grid {
     display: flex;
@@ -1033,7 +1024,6 @@ footer {
   .desktop-tel-text {
     display: none;
   }
-}
 
 @media (max-width: 480px) {
   /* Stack navbar */
