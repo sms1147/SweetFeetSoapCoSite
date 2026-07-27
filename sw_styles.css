@@ -908,6 +908,16 @@ footer {
   width: 100%;
   test-align: left;
 }
+
+/*Slim border for blog section*/
+.blog-entry {
+  border-width: 12px;
+  border-image-slice: 12;
+  padding: 1.2rem;
+  margin: 1rem 0.5rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
   
 .hero {
   height: auto;
