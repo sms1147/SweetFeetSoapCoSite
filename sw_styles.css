@@ -43,28 +43,30 @@ header h1 {
   color: #6A8F7A;
 }
 
-/*Navigation & Header Styles*/
+/*Style rules for Navbar and navigation area*/
 .navbar {
   background-color: #FDFBF7;
   padding: 10px 0;
   border-bottom: 4px solid #9BB594;
-  overflow: hidden; 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Logo floats left */
+/* Logo container */
 .logo {
-  float: left;
-  width: 250px;
+  width: 220px;
   height: auto;
-  margin-left: 20px;
-  padding-right: 50px;
 }
 
-/* Navigation floats left, next to logo */
+/* Navigation flexbox for even spacing and clean wrapping */
 .main-nav {
-  float: left;
-  padding-top: 30px;
-  padding-left: 4.5px;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 .main-nav a {
@@ -76,7 +78,6 @@ header h1 {
   padding: 1rem 1rem;
   border-radius: 8px;
   border: 1px solid #D6C7B5;
-  margin: 0 0.3rem;
 }
 
 .main-nav a:hover {
@@ -91,14 +92,13 @@ header h1 {
 }
 
 .cart-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #5A3E2B;
   border: 1px solid #D6C7B5;
   border-radius: 8px;
-  padding: 0 0 17px;
-  text-align: center;
-  position: relative;
-  top: 23px;
+  padding: 0.7rem 1rem;
 }
 
 .cart-link:hover {
@@ -946,6 +946,26 @@ footer {
 }
 
 @media (max-width: 480px) {
+  /* Stack navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  /* Center logo */
+  .logo {
+    width: 200px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Center navigation */
+  .main-nav {
+    justify-content: center;
+  }
+  
   .hero-text {
     position: static;
     right: auto;
