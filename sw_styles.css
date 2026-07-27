@@ -934,6 +934,40 @@ footer {
   max-width: 100%;
   box-sizing: border-box;
 }
+
+/*Shrink shopping card cards*/
+.cart-item,
+.cart-card {
+  width: 100%;
+  max-width: 100%:
+  margin: 10px 0;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/*Shrink recommended products section and cards*/
+.recommended-products,
+.recommendation-card,
+.recommended-card {
+  width: 100%;
+  max-width: 100%;
+  margin: 15px 0;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/*Image scale down*/
+.cart-item img,
+  .recommendation-card img,
+  .recommended-card: img {
+    max-width: 70px;
+    height: auto;
+  }
   
 .hero {
   height: auto;
