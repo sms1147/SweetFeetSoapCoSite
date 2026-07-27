@@ -879,6 +879,36 @@ footer {
 }
 
 @media (max-width: 768px) {
+/*Slim frame*/
+.about-frame {
+  border: 15px solid transparent;
+  border-image: url('images/meadow.png') 15 stretch;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+/*Stack employee cards*/
+.spot-light.card,
+  .spot-light.card.image-right,
+  .spot-light.card.image-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+.spot-light.card img {
+    flex: none;
+    width: 100%;
+    max-width: 200px;
+  }
+
+.spotlight-content {
+  width: 100%;
+  test-align: left;
+}
+  
 .hero {
   height: auto;
   min-height: 250px;
