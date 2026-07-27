@@ -376,6 +376,7 @@ main {
   display: flex;
 }
 
+/* Tablet & Mobile: Switch from sticky sidebar to top anchor */
 .shop-sidebar {
   width: 220px;
   background-color: #FAF3E0;
