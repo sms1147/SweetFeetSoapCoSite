@@ -1024,6 +1024,7 @@ footer {
   .desktop-tel-text {
     display: none;
   }
+}
 
 @media (max-width: 480px) {
   /* Stack navbar */
