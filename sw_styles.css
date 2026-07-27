@@ -452,6 +452,7 @@ main {
   margin-top: 0.5rem;
 }
 
+/* Toggled state controlled by products.js toggleDetails() function */
 .catalog-item .details {
   margin-top: 0.5rem;
 }
