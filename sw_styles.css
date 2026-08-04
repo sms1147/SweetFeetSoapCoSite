@@ -835,6 +835,37 @@ main {
     animation: slideTitle 3s ease-in-out;
 }
 
+.coming-soon-heading {
+  font-family: monospace; 
+  font-size: 2.5rem;
+  white-space: nowrap;      
+  overflow: hidden;         
+  border-right: 3px solid #4A5D4E; 
+  width: 0;                 
+  animation: typing 3.5s steps(12, end) forwards, 
+             blink 0.75s step-end infinite;
+}
+
+/* Expands the width of the text container */
+@keyframes typing {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+/* Creates the flashing cursor effect */
+@keyframes blink {
+  from, to { 
+    border-color: transparent; 
+  }
+  50% { 
+    border-color: #4A5D4E; 
+  }
+}
+
 /* Footer styling */
 footer {
   background-color: #F3EDE4;
